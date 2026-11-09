@@ -110,14 +110,14 @@ public class MainViewModel : INotifyPropertyChanged, IDisposable
         }
     }
 
-    public bool EnableCtrlMute
+    public bool EnableMiddleClickMute
     {
-        get => mainModel.EnableCtrlMute;
+        get => mainModel.EnableMiddleClickMute;
         set
         {
-            if (mainModel.EnableCtrlMute != value)
+            if (mainModel.EnableMiddleClickMute != value)
             {
-                mainModel.EnableCtrlMute = value;
+                mainModel.EnableMiddleClickMute = value;
                 OnPropertyChanged();
             }
         }

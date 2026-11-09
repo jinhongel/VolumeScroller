@@ -26,23 +26,9 @@ public static class AudioControllerNative
         keybd_event(VolumeDownCode, MapVirtualKey(VolumeDownCode, 0), ExtendedKey | KeyUp, 0);
     }
 
-    public static void Mute()
+    public static void ToggleMute()
     {
-        bool isMuted = AudioMuteChecker.IsSystemMuted();
-        if (!isMuted)
-        {
-            keybd_event(MuteCode, MapVirtualKey(MuteCode, 0), ExtendedKey, 0);
-            keybd_event(MuteCode, MapVirtualKey(MuteCode, 0), ExtendedKey | KeyUp, 0);
-        }
-    }
-
-    public static void Unmute()
-    {
-        bool isMuted = AudioMuteChecker.IsSystemMuted();
-        if (isMuted)
-        {
-            keybd_event(MuteCode, MapVirtualKey(MuteCode, 0), ExtendedKey, 0);
-            keybd_event(MuteCode, MapVirtualKey(MuteCode, 0), ExtendedKey | KeyUp, 0);
-        }
+        keybd_event(MuteCode, MapVirtualKey(MuteCode, 0), ExtendedKey, 0);
+        keybd_event(MuteCode, MapVirtualKey(MuteCode, 0), ExtendedKey | KeyUp, 0);
     }
 }

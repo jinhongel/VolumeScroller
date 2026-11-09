@@ -92,7 +92,8 @@ public class MainModel
         }
     }
 
-    public bool EnableCtrlMute
+    // Keep the persisted key so existing users retain their mute preference.
+    public bool EnableMiddleClickMute
     {
         get => Properties.Settings.Default.EnableCtrlMute;
         set

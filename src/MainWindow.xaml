@@ -81,15 +81,15 @@
                       VerticalAlignment="Center"
                       IsChecked="{Binding RunOnStartup, Mode=TwoWay}" />
                       
-            <!-- Enable Ctrl+Scroll for Mute/Unmute -->
-            <Label Content="Ctrl+Scroll for Mute/Unmute"
+            <!-- Enable middle-click for Mute/Unmute -->
+            <Label Content="Middle-click for Mute/Unmute"
                    Grid.Row="2"
                    Grid.Column="0"
                    HorizontalAlignment="Right" />
             <CheckBox Grid.Row="2"
                       Grid.Column="1"
                       VerticalAlignment="Center"
-                      IsChecked="{Binding EnableCtrlMute, Mode=TwoWay}" />
+                      IsChecked="{Binding EnableMiddleClickMute, Mode=TwoWay}" />
 
             <!-- Mode Selection -->
             <TextBlock Grid.Row="4"
