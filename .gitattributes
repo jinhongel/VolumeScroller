@@ -1,0 +1,9 @@
+# Normalize text to LF in Git and use CRLF in the Windows working tree.
+* text=auto eol=crlf
+
+# Binary assets must not undergo text conversion or text diffs.
+*.exe binary
+*.ico binary
+*.mp4 binary
+*.png binary
+*.psd binary
