@@ -27,7 +27,7 @@ Demonstration: https://www.youtube.com/watch?v=BXunyRh0T_w
     3. Screen Edges - Change volume by scrolling near the screen edges (configurable for all four corners)
 - Run on startup (customizable)
 - Custom volume increment
-- Middle-click to mute/unmute within the configured taskbar or screen border region (optional); unmuting preserves the volume level
+- Middle-click within the configured taskbar or screen border region to set the volume to 0; click again to restore the previous level (optional)
 - Multi-monitor support
 - Taskbar at different positions and sizes is supported
 - Auto Dark Mode support (for tray icon)
