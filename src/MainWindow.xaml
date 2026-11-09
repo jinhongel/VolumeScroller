@@ -47,15 +47,35 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
+            <!-- Run on startup -->
+            <CheckBox Content="Run on startup"
+                      Grid.Row="0"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="2"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Center"
+                      Margin="0,5,0,5"
+                      IsChecked="{Binding RunOnStartup, Mode=TwoWay}" />
+
+            <!-- Enable middle-click for Mute/Unmute -->
+            <CheckBox Content="Middle-click for Mute/Unmute"
+                      Grid.Row="1"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="2"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Center"
+                      Margin="0,5,0,5"
+                      IsChecked="{Binding EnableMiddleClickMute, Mode=TwoWay}" />
+
             <!-- Volume Increment -->
 
-            <Label Content="Volume increment"
-                   Grid.Row="0"
-                   Grid.Column="0"
-                   HorizontalAlignment="Right"/>
-            <StackPanel Grid.Column="1"
+            <StackPanel Grid.Row="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
                         Orientation="Horizontal"
-                        Grid.Row="0">
+                        HorizontalAlignment="Left">
+                <Label Content="Volume increment"
+                       Padding="0,5,8,5" />
                 <Slider x:Name="IncrementSlider"
                         Width="100"
                         Minimum="2"
@@ -71,25 +91,6 @@
 
                 <Label Content="{Binding ElementName=IncrementSlider, Path=Value}" />
             </StackPanel>
-            <!-- Run on startup -->
-            <Label Content="Run on startup"
-                   Grid.Row="1"
-                   Grid.Column="0"
-                   HorizontalAlignment="Right" />
-            <CheckBox Grid.Row="1"
-                      Grid.Column="1"
-                      VerticalAlignment="Center"
-                      IsChecked="{Binding RunOnStartup, Mode=TwoWay}" />
-                      
-            <!-- Enable middle-click for Mute/Unmute -->
-            <Label Content="Middle-click for Mute/Unmute"
-                   Grid.Row="2"
-                   Grid.Column="0"
-                   HorizontalAlignment="Right" />
-            <CheckBox Grid.Row="2"
-                      Grid.Column="1"
-                      VerticalAlignment="Center"
-                      IsChecked="{Binding EnableMiddleClickMute, Mode=TwoWay}" />
 
             <!-- Mode Selection -->
             <TextBlock Grid.Row="4"
