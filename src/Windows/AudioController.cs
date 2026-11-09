@@ -23,7 +23,8 @@ public class AudioController : IDisposable
     {
         if (!viewModel.EnableMiddleClickMute) return false;
 
-        return AudioControllerNative.ToggleMute();
+        AudioControllerNative.ToggleMute();
+        return true;
     }
 
     private static void ChangeVolume(Action action)
