@@ -1,7 +1,7 @@
 using System.Reflection;
 using System.Windows;
 
-[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyVersion("2.3.6.0")]
 [assembly: AssemblyProduct("Volume Scroller")]
 [assembly: AssemblyCopyright("Patrick Demichiel")]
 [assembly: ThemeInfo(
