@@ -28,10 +28,9 @@ public partial class App : Application
         
         var mainModel = new MainModel();
         mainViewModel = new MainViewModel(mainModel);
-        var mainWindow = new MainWindow(mainViewModel);
+        // Keep the settings window hidden until it is opened from the tray.
+        MainWindow = new MainWindow(mainViewModel);
         audioController = new AudioController(mainViewModel);
-        
-        mainWindow.Show();
     }
 
     private bool EnsureSingleInstance()
