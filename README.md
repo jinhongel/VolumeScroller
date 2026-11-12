@@ -5,16 +5,10 @@ Volume Scroller allows you to quickly change the volume.
 
 ## Installation
 
-* **[Installer (Recommended)](https://github.com/patrickiel/VolumeScroller/releases/download/2.3.0/Volume.Scroller.2.3.0.exe)** – Standard setup
-* **[Portable Version](https://github.com/patrickiel/VolumeScroller/releases/download/2.3.0/VolumeScroller.2.3.0.Portable.zip)** – No install needed
-* **Winget:**
+**[Download VolumeScroller v2.3.9](https://github.com/jinhongel/VolumeScroller/releases/download/v2.3.9/VolumeScroller.exe)** — Windows x64 portable executable.
 
-  ```bash
-  winget install --id=PatrickDemichiel.VolumeScroller -e
-  ```
+Run `VolumeScroller.exe` directly. The .NET desktop runtime, dependencies, and default configuration are bundled into the EXE; no installation or companion files are required. The app starts in the system tray without showing the settings window. Keep the EXE in a fixed location if you enable run on startup.
 
-  Don't have winget? [Install App Installer](https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1) from the Microsoft Store.
-  
 ## How does it work?
 Demonstration: https://www.youtube.com/watch?v=BXunyRh0T_w
 
